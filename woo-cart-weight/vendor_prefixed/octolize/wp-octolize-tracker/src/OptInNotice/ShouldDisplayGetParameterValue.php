@@ -5,7 +5,7 @@ namespace WCWeightVendor\Octolize\Tracker\OptInNotice;
 /**
  * Should display $_GET parameter value.
  */
-class ShouldDisplayGetParameterValue implements \WCWeightVendor\Octolize\Tracker\OptInNotice\ShouldDisplay
+class ShouldDisplayGetParameterValue implements ShouldDisplay
 {
     /**
      * @var string

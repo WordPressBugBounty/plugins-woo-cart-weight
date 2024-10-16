@@ -14,7 +14,7 @@ namespace WCWeightVendor;
 if (!\defined('ABSPATH')) {
     exit;
 }
-if (!\class_exists('WCWeightVendor\\WPDesk_Tracker_Data_Provider_Gateways')) {
+if (!\class_exists('WCWeightVendor\WPDesk_Tracker_Data_Provider_Gateways')) {
     /**
      * Class WPDesk_Tracker_Data_Provider_Gateways
      */
@@ -27,11 +27,11 @@ if (!\class_exists('WCWeightVendor\\WPDesk_Tracker_Data_Provider_Gateways')) {
          */
         public function get_data()
         {
-            $active_gateways = array();
+            $active_gateways = [];
             $gateways = \WC()->payment_gateways->payment_gateways();
             foreach ($gateways as $id => $gateway) {
                 if (isset($gateway->enabled) && 'yes' === $gateway->enabled) {
-                    $active_gateways[$id] = array('title' => $gateway->title, 'supports' => $gateway->supports);
+                    $active_gateways[$id] = ['title' => $gateway->title, 'supports' => $gateway->supports];
                 }
             }
             return ['gateways' => $active_gateways];

@@ -7,7 +7,7 @@ use WCWeightVendor\WPDesk\Plugin\Flow\Initialization\InitializationStrategy;
 /**
  * Can decide if strategy is for free plugin or paid plugin
  */
-class SimpleFactory implements \WCWeightVendor\WPDesk\Plugin\Flow\Initialization\InitializationFactory
+class SimpleFactory implements InitializationFactory
 {
     /** @var bool */
     private $free;
@@ -28,8 +28,8 @@ class SimpleFactory implements \WCWeightVendor\WPDesk\Plugin\Flow\Initialization
     public function create_initialization_strategy(\WCWeightVendor\WPDesk_Plugin_Info $info)
     {
         if ($this->free) {
-            return new \WCWeightVendor\WPDesk\Plugin\Flow\Initialization\Simple\SimpleFreeStrategy($info);
+            return new SimpleFreeStrategy($info);
         }
-        return new \WCWeightVendor\WPDesk\Plugin\Flow\Initialization\Simple\SimplePaidStrategy($info);
+        return new SimplePaidStrategy($info);
     }
 }

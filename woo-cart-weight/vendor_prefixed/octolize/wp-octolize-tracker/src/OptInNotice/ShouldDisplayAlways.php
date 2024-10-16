@@ -5,7 +5,7 @@ namespace WCWeightVendor\Octolize\Tracker\OptInNotice;
 /**
  * Should display always.
  */
-class ShouldDisplayAlways implements \WCWeightVendor\Octolize\Tracker\OptInNotice\ShouldDisplay
+class ShouldDisplayAlways implements ShouldDisplay
 {
     /**
      * @inheritDoc

@@ -5,7 +5,7 @@ namespace WCWeightVendor\Octolize\Tracker\OptInNotice;
 /**
  * Should display OR conditions.
  */
-class ShouldDisplayOrConditions implements \WCWeightVendor\Octolize\Tracker\OptInNotice\ShouldDisplay
+class ShouldDisplayOrConditions implements ShouldDisplay
 {
     /**
      * @var ShouldDisplay[]
@@ -16,7 +16,7 @@ class ShouldDisplayOrConditions implements \WCWeightVendor\Octolize\Tracker\OptI
      *
      * @return void
      */
-    public function add_should_diaplay_condition(\WCWeightVendor\Octolize\Tracker\OptInNotice\ShouldDisplay $should_display)
+    public function add_should_diaplay_condition(ShouldDisplay $should_display)
     {
         $this->conditions[] = $should_display;
     }

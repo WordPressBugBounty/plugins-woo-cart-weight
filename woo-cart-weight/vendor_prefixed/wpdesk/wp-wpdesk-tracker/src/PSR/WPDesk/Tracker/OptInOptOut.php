@@ -4,7 +4,7 @@ namespace WCWeightVendor\WPDesk\Tracker;
 
 use WCWeightVendor\WPDesk\PluginBuilder\Plugin\HookableCollection;
 use WCWeightVendor\WPDesk\PluginBuilder\Plugin\HookableParent;
-class OptInOptOut implements \WCWeightVendor\WPDesk\PluginBuilder\Plugin\HookableCollection
+class OptInOptOut implements HookableCollection
 {
     use HookableParent;
     /**
@@ -28,7 +28,6 @@ class OptInOptOut implements \WCWeightVendor\WPDesk\PluginBuilder\Plugin\Hookabl
      * @param string $plugin_slug
      * @param string $shop_url
      * @param string $plugin_name
-     *
      */
     public function __construct($plugin_file, $plugin_slug, $shop_url, $plugin_name)
     {
@@ -42,10 +41,10 @@ class OptInOptOut implements \WCWeightVendor\WPDesk\PluginBuilder\Plugin\Hookabl
      */
     public function create_objects()
     {
-        $this->add_hookable(new \WCWeightVendor\WPDesk\Tracker\PluginActionLinks($this->plugin_file, $this->plugin_slug, $this->shop_url));
-        $this->add_hookable(new \WCWeightVendor\WPDesk\Tracker\OptInPage($this->plugin_file, $this->plugin_slug));
-        $this->add_hookable(new \WCWeightVendor\WPDesk\Tracker\OptOut($this->plugin_slug, $this->plugin_name));
-        $this->add_hookable(new \WCWeightVendor\WPDesk\Tracker\Assets($this->plugin_slug));
+        $this->add_hookable(new PluginActionLinks($this->plugin_file, $this->plugin_slug, $this->shop_url));
+        $this->add_hookable(new OptInPage($this->plugin_file, $this->plugin_slug));
+        $this->add_hookable(new OptOut($this->plugin_slug, $this->plugin_name));
+        $this->add_hookable(new Assets($this->plugin_slug));
     }
     public function hooks()
     {

@@ -33,12 +33,12 @@ use WCWeightVendor\Monolog\Formatter\FormatterInterface;
  *
  * @author Kris Buist <krisbuist@gmail.com>
  */
-class OverflowHandler extends \WCWeightVendor\Monolog\Handler\AbstractHandler implements \WCWeightVendor\Monolog\Handler\FormattableHandlerInterface
+class OverflowHandler extends AbstractHandler implements FormattableHandlerInterface
 {
     /** @var HandlerInterface */
     private $handler;
     /** @var int[] */
-    private $thresholdMap = [\WCWeightVendor\Monolog\Logger::DEBUG => 0, \WCWeightVendor\Monolog\Logger::INFO => 0, \WCWeightVendor\Monolog\Logger::NOTICE => 0, \WCWeightVendor\Monolog\Logger::WARNING => 0, \WCWeightVendor\Monolog\Logger::ERROR => 0, \WCWeightVendor\Monolog\Logger::CRITICAL => 0, \WCWeightVendor\Monolog\Logger::ALERT => 0, \WCWeightVendor\Monolog\Logger::EMERGENCY => 0];
+    private $thresholdMap = [Logger::DEBUG => 0, Logger::INFO => 0, Logger::NOTICE => 0, Logger::WARNING => 0, Logger::ERROR => 0, Logger::CRITICAL => 0, Logger::ALERT => 0, Logger::EMERGENCY => 0];
     /**
      * Buffer of all messages passed to the handler before the threshold was reached
      *
@@ -49,7 +49,7 @@ class OverflowHandler extends \WCWeightVendor\Monolog\Handler\AbstractHandler im
      * @param HandlerInterface $handler
      * @param int[]            $thresholdMap Dictionary of logger level => threshold
      */
-    public function __construct(\WCWeightVendor\Monolog\Handler\HandlerInterface $handler, array $thresholdMap = [], $level = \WCWeightVendor\Monolog\Logger::DEBUG, bool $bubble = \true)
+    public function __construct(HandlerInterface $handler, array $thresholdMap = [], $level = Logger::DEBUG, bool $bubble = \true)
     {
         $this->handler = $handler;
         foreach ($thresholdMap as $thresholdLevel => $threshold) {
@@ -69,7 +69,7 @@ class OverflowHandler extends \WCWeightVendor\Monolog\Handler\AbstractHandler im
      *
      * {@inheritDoc}
      */
-    public function handle(array $record) : bool
+    public function handle(array $record): bool
     {
         if ($record['level'] < $this->level) {
             return \false;
@@ -98,22 +98,22 @@ class OverflowHandler extends \WCWeightVendor\Monolog\Handler\AbstractHandler im
     /**
      * {@inheritDoc}
      */
-    public function setFormatter(\WCWeightVendor\Monolog\Formatter\FormatterInterface $formatter) : \WCWeightVendor\Monolog\Handler\HandlerInterface
+    public function setFormatter(FormatterInterface $formatter): HandlerInterface
     {
-        if ($this->handler instanceof \WCWeightVendor\Monolog\Handler\FormattableHandlerInterface) {
+        if ($this->handler instanceof FormattableHandlerInterface) {
             $this->handler->setFormatter($formatter);
             return $this;
         }
-        throw new \UnexpectedValueException('The nested handler of type ' . \get_class($this->handler) . ' does not support formatters.');
+        throw new \UnexpectedValueException('The nested handler of type ' . get_class($this->handler) . ' does not support formatters.');
     }
     /**
      * {@inheritDoc}
      */
-    public function getFormatter() : \WCWeightVendor\Monolog\Formatter\FormatterInterface
+    public function getFormatter(): FormatterInterface
     {
-        if ($this->handler instanceof \WCWeightVendor\Monolog\Handler\FormattableHandlerInterface) {
+        if ($this->handler instanceof FormattableHandlerInterface) {
             return $this->handler->getFormatter();
         }
-        throw new \UnexpectedValueException('The nested handler of type ' . \get_class($this->handler) . ' does not support formatters.');
+        throw new \UnexpectedValueException('The nested handler of type ' . get_class($this->handler) . ' does not support formatters.');
     }
 }

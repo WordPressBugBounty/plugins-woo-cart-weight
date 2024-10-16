@@ -15,5 +15,5 @@ abstract class SlimPlugin implements \WCWeightVendor\WPDesk_Translatable
      *
      * @return void
      */
-    public abstract function init();
+    abstract public function init();
 }

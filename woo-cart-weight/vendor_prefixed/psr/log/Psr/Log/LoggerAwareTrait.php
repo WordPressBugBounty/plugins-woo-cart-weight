@@ -18,7 +18,7 @@ trait LoggerAwareTrait
      *
      * @param LoggerInterface $logger
      */
-    public function setLogger(\WCWeightVendor\Psr\Log\LoggerInterface $logger)
+    public function setLogger(LoggerInterface $logger)
     {
         $this->logger = $logger;
     }

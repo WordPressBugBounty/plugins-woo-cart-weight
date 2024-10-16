@@ -10,7 +10,7 @@ use WCWeightVendor\WPDesk\PluginBuilder\Plugin\SlimPlugin;
  * Initialize free plugin
  * - just build it already
  */
-class SimpleFreeStrategy implements \WCWeightVendor\WPDesk\Plugin\Flow\Initialization\InitializationStrategy
+class SimpleFreeStrategy implements InitializationStrategy
 {
     use TrackerInstanceAsFilterTrait;
     use BuilderTrait;
@@ -49,6 +49,10 @@ class SimpleFreeStrategy implements \WCWeightVendor\WPDesk\Plugin\Flow\Initializ
         $this->prepare_tracker_action();
         $this->store_plugin($this->plugin);
         $this->init_plugin($this->plugin);
+        // Flush usage tracker late, to remain backward compatible with plugins which could instantiate
+        // the tracker on their own through `wpdesk_tracker_instance` filter.
+        $this->get_tracker_instance();
+        $this->register_tracker_ui_extensions();
         return $this->plugin;
     }
 }

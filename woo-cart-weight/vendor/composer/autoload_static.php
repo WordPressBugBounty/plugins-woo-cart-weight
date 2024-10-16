@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit883cad9a6209935ecb4f9e962571428e
+class ComposerStaticInit1b1045481faf12eb6fefdcfa8e0ce9dd
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -153,6 +153,7 @@ class ComposerStaticInit883cad9a6209935ecb4f9e962571428e
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Tracker\\DataProvider\\ShippingExtensionsDataProvider' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Tracker/DataProvider/ShippingExtensionsDataProvider.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Tracker\\Tracker' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Tracker/Tracker.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Tracker\\ViewPageTracker' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Tracker/ViewPageTracker.php',
+        'WCWeightVendor\\Octolize\\ShippingExtensions\\WooCommerceSuggestions' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/WooCommerceSuggestions.php',
         'WCWeightVendor\\Octolize\\Tracker\\DeactivationTracker\\OctolizeProReasonsFactory' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-octolize-tracker/src/DeactivationTracker/OctolizeProReasonsFactory.php',
         'WCWeightVendor\\Octolize\\Tracker\\DeactivationTracker\\OctolizeReasonsFactory' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-octolize-tracker/src/DeactivationTracker/OctolizeReasonsFactory.php',
         'WCWeightVendor\\Octolize\\Tracker\\OptInNotice\\OptInNotice' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/OptInNotice.php',
@@ -208,6 +209,7 @@ class ComposerStaticInit883cad9a6209935ecb4f9e962571428e
         'WCWeightVendor\\WPDesk\\Logger\\BasicLoggerFactory' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-logs/src/BasicLoggerFactory.php',
         'WCWeightVendor\\WPDesk\\Logger\\LoggerFacade' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-logs/src/LoggerFacade.php',
         'WCWeightVendor\\WPDesk\\Logger\\LoggerFactory' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-logs/src/LoggerFactory.php',
+        'WCWeightVendor\\WPDesk\\Logger\\Processor\\SensitiveDataProcessor' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-logs/src/Processor/SensitiveDataProcessor.php',
         'WCWeightVendor\\WPDesk\\Logger\\Settings' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-logs/src/Settings.php',
         'WCWeightVendor\\WPDesk\\Logger\\SimpleLoggerFactory' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-logs/src/SimpleLoggerFactory.php',
         'WCWeightVendor\\WPDesk\\Logger\\WC\\Exception\\WCLoggerAlreadyCaptured' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-logs/src/WC/Exception/WCLoggerAlreadyCaptured.php',
@@ -278,6 +280,7 @@ class ComposerStaticInit883cad9a6209935ecb4f9e962571428e
         'WCWeightVendor\\WPDesk\\View\\Resolver\\NullResolver' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-view/src/Resolver/NullResolver.php',
         'WCWeightVendor\\WPDesk\\View\\Resolver\\Resolver' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-view/src/Resolver/Resolver.php',
         'WCWeightVendor\\WPDesk\\View\\Resolver\\WPThemeResolver' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-view/src/Resolver/WPThemeResolver.php',
+        'WCWeightVendor\\WPDesk\\View\\Resolver\\WooTemplateResolver' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-view/src/Resolver/WooTemplateResolver.php',
         'WCWeightVendor\\WPDesk_Basic_Requirement_Checker' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php',
         'WCWeightVendor\\WPDesk_Basic_Requirement_Checker_Factory' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_Factory.php',
         'WCWeightVendor\\WPDesk_Basic_Requirement_Checker_With_Update_Disable' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php',
@@ -336,9 +339,9 @@ class ComposerStaticInit883cad9a6209935ecb4f9e962571428e
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit883cad9a6209935ecb4f9e962571428e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit883cad9a6209935ecb4f9e962571428e::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit883cad9a6209935ecb4f9e962571428e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1b1045481faf12eb6fefdcfa8e0ce9dd::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1b1045481faf12eb6fefdcfa8e0ce9dd::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1b1045481faf12eb6fefdcfa8e0ce9dd::$classMap;
 
         }, null, ClassLoader::class);
     }

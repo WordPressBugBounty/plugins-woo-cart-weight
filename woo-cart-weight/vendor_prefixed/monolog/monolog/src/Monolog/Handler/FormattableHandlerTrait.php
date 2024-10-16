@@ -27,7 +27,7 @@ trait FormattableHandlerTrait
     /**
      * {@inheritDoc}
      */
-    public function setFormatter(\WCWeightVendor\Monolog\Formatter\FormatterInterface $formatter) : \WCWeightVendor\Monolog\Handler\HandlerInterface
+    public function setFormatter(FormatterInterface $formatter): HandlerInterface
     {
         $this->formatter = $formatter;
         return $this;
@@ -35,7 +35,7 @@ trait FormattableHandlerTrait
     /**
      * {@inheritDoc}
      */
-    public function getFormatter() : \WCWeightVendor\Monolog\Formatter\FormatterInterface
+    public function getFormatter(): FormatterInterface
     {
         if (!$this->formatter) {
             $this->formatter = $this->getDefaultFormatter();
@@ -47,8 +47,8 @@ trait FormattableHandlerTrait
      *
      * Overwrite this if the LineFormatter is not a good default for your handler.
      */
-    protected function getDefaultFormatter() : \WCWeightVendor\Monolog\Formatter\FormatterInterface
+    protected function getDefaultFormatter(): FormatterInterface
     {
-        return new \WCWeightVendor\Monolog\Formatter\LineFormatter();
+        return new LineFormatter();
     }
 }

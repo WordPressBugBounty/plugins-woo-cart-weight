@@ -1,11 +1,11 @@
 === Cart Weight for WooCommerce ===
 Contributors: octolize,grola,sebastianpisula
 Donate link: https://octolize.com/
-Tags: cart, weight, woocommerce cart weight, order weight, product weight
+Tags: woocommerce, cart, weight, woocommerce cart weight, order weight, order total weight
 Requires at least: 4.5
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.8.13
+Stable tag: 1.9.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -69,6 +69,13 @@ function woo_cart_weight_weight_unit( $weight_unit ) {
 3. Cart Weight - Order Total Weight on the checkout page
 
 == Changelog ==
+
+= 1.9.0 - 2024-10-16 =
+* Added support for WordPress 6.7
+* Added support for WooCommerce 9.4
+
+= 1.8.14 - 2024-09-01 =
+* Added support for WooCommerce 9.3
 
 = 1.8.13 - 2024-08-04 =
 * Added support for WooCommerce 9.2

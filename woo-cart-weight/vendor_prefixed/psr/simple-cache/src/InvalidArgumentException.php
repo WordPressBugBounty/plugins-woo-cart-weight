@@ -8,6 +8,6 @@ namespace WCWeightVendor\Psr\SimpleCache;
  * When an invalid argument is passed it must throw an exception which implements
  * this interface
  */
-interface InvalidArgumentException extends \WCWeightVendor\Psr\SimpleCache\CacheException
+interface InvalidArgumentException extends CacheException
 {
 }

@@ -21,7 +21,7 @@ use WCWeightVendor\Monolog\Formatter\FormatterInterface;
  * @author Matt Lehner <mlehner@gmail.com>
  * @author Benjamin Zikarsky <benjamin@zikarsky.de>
  */
-class GelfHandler extends \WCWeightVendor\Monolog\Handler\AbstractProcessingHandler
+class GelfHandler extends AbstractProcessingHandler
 {
     /**
      * @var PublisherInterface the publisher object that sends the message to the server
@@ -30,7 +30,7 @@ class GelfHandler extends \WCWeightVendor\Monolog\Handler\AbstractProcessingHand
     /**
      * @param PublisherInterface $publisher a gelf publisher object
      */
-    public function __construct(\WCWeightVendor\Gelf\PublisherInterface $publisher, $level = \WCWeightVendor\Monolog\Logger::DEBUG, bool $bubble = \true)
+    public function __construct(PublisherInterface $publisher, $level = Logger::DEBUG, bool $bubble = \true)
     {
         parent::__construct($level, $bubble);
         $this->publisher = $publisher;
@@ -38,15 +38,15 @@ class GelfHandler extends \WCWeightVendor\Monolog\Handler\AbstractProcessingHand
     /**
      * {@inheritDoc}
      */
-    protected function write(array $record) : void
+    protected function write(array $record): void
     {
         $this->publisher->publish($record['formatted']);
     }
     /**
      * {@inheritDoc}
      */
-    protected function getDefaultFormatter() : \WCWeightVendor\Monolog\Formatter\FormatterInterface
+    protected function getDefaultFormatter(): FormatterInterface
     {
-        return new \WCWeightVendor\Monolog\Formatter\GelfMessageFormatter();
+        return new GelfMessageFormatter();
     }
 }
