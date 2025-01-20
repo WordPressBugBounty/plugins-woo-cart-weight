@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wpdesk/woo-cart-weight',
-        'pretty_version' => '1.9.1',
-        'version' => '1.9.1.0',
-        'reference' => '3b87fc7417c8e6fd277bd8ac66f0969c29a3d140',
+        'pretty_version' => '1.9.2',
+        'version' => '1.9.2.0',
+        'reference' => '6a74539e3bf2481ba4cc0be92cab3085cbc54c70',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'wpdesk/woo-cart-weight' => array(
-            'pretty_version' => '1.9.1',
-            'version' => '1.9.1.0',
-            'reference' => '3b87fc7417c8e6fd277bd8ac66f0969c29a3d140',
+            'pretty_version' => '1.9.2',
+            'version' => '1.9.2.0',
+            'reference' => '6a74539e3bf2481ba4cc0be92cab3085cbc54c70',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
