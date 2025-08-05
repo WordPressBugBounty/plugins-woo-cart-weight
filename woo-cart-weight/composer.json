@@ -1,5 +1,5 @@
 {
-    "name": "wpdesk/woo-cart-weight",
+    "name": "octolize-plugin/woo-cart-weight",
     "authors": [
         {
             "name": "Krzysiek",
@@ -81,5 +81,7 @@
             "type": "composer",
             "url": "https://gitlab.wpdesk.dev/api/v4/group/wpdesk/-/packages/composer/"
         }
-    }
+    },
+    "version": "1.9.9",
+    "type": "wordpress-plugin"
 }
