@@ -7,14 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInitf40fcb643f78078df9e386656b2922f3
 {
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'W' =>
         array (
             'WPDesk\\WooCommerceCartWeight\\' => 29,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'WPDesk\\WooCommerceCartWeight\\' => 
+        'WPDesk\\WooCommerceCartWeight\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -143,6 +143,7 @@ class ComposerStaticInitf40fcb643f78078df9e386656b2922f3
         'WCWeightVendor\\Octolize\\Blocks\\StoreEndpoint' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/octolize-checkout-block-integration/src/Blocks/StoreEndpoint.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\AdminPage' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/AdminPage.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Assets' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Assets.php',
+        'WCWeightVendor\\Octolize\\ShippingExtensions\\BlackFriday2025Promo' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/BlackFriday2025Promo.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Page' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Page.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\PageViewTracker' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/PageViewTracker.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\PluginLinks' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/PluginLinks.php',
@@ -168,7 +169,6 @@ class ComposerStaticInitf40fcb643f78078df9e386656b2922f3
         'WCWeightVendor\\Octolize\\Tracker\\SenderRegistrator' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-octolize-tracker/src/SenderRegistrator.php',
         'WCWeightVendor\\Octolize\\Tracker\\SenderToOctolize' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-octolize-tracker/src/SenderToOctolize.php',
         'WCWeightVendor\\Octolize\\Tracker\\TrackerInitializer' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-octolize-tracker/src/TrackerInitializer.php',
-        'WCWeightVendor\\Psr\\Clock\\ClockInterface' => __DIR__ . '/../..' . '/vendor_prefixed/psr/clock/src/ClockInterface.php',
         'WCWeightVendor\\Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/../..' . '/vendor_prefixed/psr/container/src/ContainerExceptionInterface.php',
         'WCWeightVendor\\Psr\\Container\\ContainerInterface' => __DIR__ . '/../..' . '/vendor_prefixed/psr/container/src/ContainerInterface.php',
         'WCWeightVendor\\Psr\\Container\\NotFoundExceptionInterface' => __DIR__ . '/../..' . '/vendor_prefixed/psr/container/src/NotFoundExceptionInterface.php',
@@ -203,9 +203,6 @@ class ComposerStaticInitf40fcb643f78078df9e386656b2922f3
         'WCWeightVendor\\Psr\\Log\\Test\\DummyTest' => __DIR__ . '/../..' . '/vendor_prefixed/psr/log/Psr/Log/Test/DummyTest.php',
         'WCWeightVendor\\Psr\\Log\\Test\\LoggerInterfaceTest' => __DIR__ . '/../..' . '/vendor_prefixed/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
         'WCWeightVendor\\Psr\\Log\\Test\\TestLogger' => __DIR__ . '/../..' . '/vendor_prefixed/psr/log/Psr/Log/Test/TestLogger.php',
-        'WCWeightVendor\\Psr\\SimpleCache\\CacheException' => __DIR__ . '/../..' . '/vendor_prefixed/psr/simple-cache/src/CacheException.php',
-        'WCWeightVendor\\Psr\\SimpleCache\\CacheInterface' => __DIR__ . '/../..' . '/vendor_prefixed/psr/simple-cache/src/CacheInterface.php',
-        'WCWeightVendor\\Psr\\SimpleCache\\InvalidArgumentException' => __DIR__ . '/../..' . '/vendor_prefixed/psr/simple-cache/src/InvalidArgumentException.php',
         'WCWeightVendor\\WPDesk\\Logger\\BasicLoggerFactory' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-logs/src/BasicLoggerFactory.php',
         'WCWeightVendor\\WPDesk\\Logger\\LoggerFacade' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-logs/src/LoggerFacade.php',
         'WCWeightVendor\\WPDesk\\Logger\\LoggerFactory' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-logs/src/LoggerFactory.php',

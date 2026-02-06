@@ -1,11 +1,11 @@
 === Cart Weight for WooCommerce ===
 Contributors: octolize,grola,sebastianpisula
 Donate link: https://octolize.com/
-Tags: woocommerce, cart, weight, woocommerce cart weight, order weight, order total weight
+Tags: weight, cart weight, total weight, order total weight, product weight
 Requires at least: 4.5
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.9.10
+Stable tag: 1.9.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,22 +13,24 @@ Display product weight at WooCommerce cart and checkout. No configuration needed
 
 == Description ==
 
-Display the weight of the products the customers are about to order in the cart, minicart and checkout. Just turn the plugin on and that's it!
+= The best free plugin to display the total product weight in the cart, minicart, and checkout of your WooCommerce store =
 
-This plugin does not require any additional configuration. Once it is activated the **order total weight value will be automatically displayed in the aforementioned places.**
+The Cart Weight for WooCommerce plugin automatically displays the total product weight on the cart, minicart, and checkout pages. It does not require any additional configuration - just turn it on, and that’s it!
 
-English, Polish and German translations included. You can easily translate it to other languages as well.
+[youtube https://youtu.be/fNDDIKzzVOg]
 
-> **Get more WooCommerce plugins from Octolize**<br />
-> We know WooCommerce shipping inside out and put all our experience into our plugins. Check our [WooCommerce premium plugins here →](https://octol.io/cart-weight-repo-promo)
+English, Polish, and German translations included. You can easily translate it into other languages as well.
+
+**Get more plugins for WooCommerce from Octolize**
+We know WooCommerce shipping inside out and put all our experience into our plugins. Check our [WooCommerce premium plugins here →](https://octol.io/cart-weight-repo-promo)
 
 = Interested in plugin translations? =
 
-We are actively looking for contributors to translate this and [other Octolize plugins](https://profiles.wordpress.org/octolize/#content-plugins). Each supported language tremendously help store owners to conveniently manage shipping operations.
+We are actively looking for contributors to translate this and [other Octolize plugins](https://profiles.wordpress.org/octolize/#content-plugins). Each supported language tremendously helps store owners to conveniently manage shipping operations.
 
-Your translations contribute to the WordPress community at large. Moreover, we're glad to offer you discounts for our PRO plugins and establish long-term collaboration. If you have any translation related questions, please email us at [translations@octolize.com](mailto:translations@octolize.com).
+Your translations contribute to the WordPress community at large. Moreover, we’re glad to offer you discounts for our PRO plugins and establish long-term collaboration. If you have any translation-related questions, please email us at translations@octolize.com.
 
-Head over here and help us to translate this plugin:
+Head over here and help us translate this plugin:
 [https://translate.wordpress.org/projects/wp-plugins/woo-cart-weight/](https://translate.wordpress.org/projects/wp-plugins/woo-cart-weight/)
 
 == Installation	 ==
@@ -69,6 +71,19 @@ function woo_cart_weight_weight_unit( $weight_unit ) {
 3. Cart Weight - Order Total Weight on the checkout page
 
 == Changelog ==
+
+= 1.9.14 - 2026-01-20 =
+* Added support for WooCommerce 10.5
+
+= 1.9.13 - 2025-12-02 =
+* Added support for WordPress 6.9
+* Added support for WooCommerce 10.4
+
+= 1.9.12 - 2025-11-14 =
+* Improved security by nonce verification in tracker agree action
+
+= 1.9.11 - 2025-10-06 =
+* Added support for WooCommerce 10.3
 
 = 1.9.10 - 2025-08-11 =
 * Added support for WooCommerce 10.2

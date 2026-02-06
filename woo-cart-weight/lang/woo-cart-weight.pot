@@ -1,17 +1,17 @@
-# Copyright (C) 2025 Octolize
+# Copyright (C) 2026 Octolize
 # This file is distributed under the same license as the Cart Weight plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Cart Weight 1.9.10\n"
+"Project-Id-Version: Cart Weight 1.9.14\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-cart-weight\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-08-11T23:17:03+00:00\n"
+"POT-Creation-Date: 2026-01-20T00:22:32+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: woo-cart-weight\n"
 
 #. Plugin Name of the plugin
@@ -70,10 +70,12 @@ msgid "I had difficulties configuring the plugin"
 msgstr ""
 
 #: vendor_prefixed/octolize/wp-octolize-tracker/src/DeactivationTracker/OctolizeReasonsFactory.php:36
+#, php-format
 msgid "Sorry to hear that! We're certain that with a little help, configuring the plugin will be a breeze. Before you deactivate, try to find a solution in our %1$sdocumentation%2$s%3$s."
 msgstr ""
 
 #: vendor_prefixed/octolize/wp-octolize-tracker/src/DeactivationTracker/OctolizeReasonsFactory.php:36
+#, php-format
 msgid " or post a question on the %1$sforum%2$s"
 msgstr ""
 
@@ -82,10 +84,12 @@ msgid "The plugin stopped working"
 msgstr ""
 
 #: vendor_prefixed/octolize/wp-octolize-tracker/src/DeactivationTracker/OctolizeReasonsFactory.php:36
+#, php-format
 msgid "We take any issues with our plugins very seriously. Try to find a reason in our %1$sdocumentation%2$s%3$s."
 msgstr ""
 
 #: vendor_prefixed/octolize/wp-octolize-tracker/src/DeactivationTracker/OctolizeReasonsFactory.php:36
+#, php-format
 msgid " or post the problem on the %1$sforum%2$s"
 msgstr ""
 
@@ -106,6 +110,7 @@ msgid "The plugin doesn't have the functionality I need"
 msgstr ""
 
 #: vendor_prefixed/octolize/wp-octolize-tracker/src/DeactivationTracker/OctolizeReasonsFactory.php:36
+#, php-format
 msgid "Good news! There's a great chance that the functionality you need is already implemented in the PRO version of the plugin. %1$sContact us%2$s to receive a discount for %3$s. Also, can you describe what functionality you're looking for?"
 msgstr ""
 
@@ -122,6 +127,7 @@ msgid "I'm moving my shop from WooCommerce to Shopify"
 msgstr ""
 
 #: vendor_prefixed/octolize/wp-octolize-tracker/src/DeactivationTracker/OctolizeReasonsFactory.php:36
+#, php-format
 msgid "Switching to Shopify? We've got you covered! %1$sExplore our Shopify apps%2$s and see how they can help you make the most of your new platform!"
 msgstr ""
 
@@ -158,6 +164,7 @@ msgid "Help us improve Octolize plugins' experience"
 msgstr ""
 
 #: vendor_prefixed/octolize/wp-octolize-tracker/src/OptInNotice/views/html-notice.php:15
+#, php-format
 msgid "Hi %1$s, with your helping hand we can build effective solutions, launch the new features and shape better plugins experience. By agreeing to anonymously share non-sensitive %2$susage data%3$s of our plugins, you will help us develop them in the right direction. No personal data is tracked or stored and you can opt-out any time. Will you give the thumbs up to our efforts?"
 msgstr ""
 
@@ -423,6 +430,61 @@ msgstr ""
 msgid "Filter plugins:"
 msgstr ""
 
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:206
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please contact your host and ask them to upgrade."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:209
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. Please update WordPress."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:212
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than %s. Please update WooCommerce."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:215
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at least %s. Please update OpenSSL module."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:303
+#, php-format
+msgid "The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work correctly. Please update it to its latest release."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:409
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run without %s active. Please install and activate %s plugin."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:461
+#, php-format
+msgid "The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install %s</a>"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:467
+#, php-format
+msgid "The &#8220;%s&#8221; plugin requires activating %s plugin. <a href=\"%s\">Activate %s</a>"
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:509
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. Please contact your host and ask them to install %s."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:534
+#, php-format
+msgid "The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. Please contact your host and ask them to set %s."
+msgstr ""
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker_With_Update_Disable.php:29
+#, php-format
+msgid "The &#8220;%s&#8221; plugin is temporarily disabled since the required %s plugin is being upgraded."
+msgstr ""
+
 #: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:184
 msgid "Docs"
 msgstr ""
@@ -469,11 +531,13 @@ msgstr ""
 
 #. Translators: directory.
 #: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+#, php-format
 msgid "Can not enable WP Desk Debug log! Cannot create directory %s or this directory is not writeable!"
 msgstr ""
 
 #. Translators: directory.
 #: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+#, php-format
 msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
 msgstr ""
 
@@ -526,6 +590,7 @@ msgstr ""
 
 #: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:23
 #: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:11
+#, php-format
 msgid "You are deactivating %s plugin."
 msgstr ""
 
@@ -539,7 +604,7 @@ msgid "Skip &amp; Deactivate"
 msgstr ""
 
 #: vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/views/thickbox.php:99
-#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:126
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/class-wpdesk-tracker.php:164
 msgid "Submit &amp; Deactivate"
 msgstr ""
 
@@ -548,7 +613,8 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/OptOut.php:41
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/OptOut.php:42
+#, php-format
 msgid "You successfully opted out of collecting usage data by %1$s. If you change your mind, you can always opt in later in the plugin's quick links."
 msgstr ""
 
@@ -564,6 +630,7 @@ msgstr ""
 #: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:23
 #: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:15
 #: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:19
+#, php-format
 msgid "Hey %s,"
 msgstr ""
 
@@ -603,6 +670,7 @@ msgid "Plugin Usage"
 msgstr ""
 
 #: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/views/tracker-connect.php:70
+#, php-format
 msgid "Current settings and usage information of %1$s plugins"
 msgstr ""
 
