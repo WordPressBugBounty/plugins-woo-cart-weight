@@ -3,9 +3,9 @@ Contributors: octolize,grola,sebastianpisula
 Donate link: https://octolize.com/
 Tags: weight, cart weight, total weight, order total weight, product weight
 Requires at least: 4.5
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.9.15
+Stable tag: 1.9.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,10 @@ function woo_cart_weight_weight_unit( $weight_unit ) {
 3. Cart Weight - Order Total Weight on the checkout page
 
 == Changelog ==
+
+= 1.9.16 - 2026-03-10 =
+* Added support for WordPress 7.0
+* Updated libraries
 
 = 1.9.15 - 2026-02-24 =
 * Added support for WooCommerce 10.6
