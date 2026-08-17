@@ -2,6 +2,8 @@
 
 namespace WCWeightVendor\Octolize\ShippingExtensions\Plugin;
 
+use WCWeightVendor\Octolize\ShippingExtensions\DateRange;
+use WCWeightVendor\Octolize\ShippingExtensions\TimedUpdate;
 class PluginFactory
 {
     const CATEGORY_ALL = 'all';
@@ -10,6 +12,9 @@ class PluginFactory
     const CATEGORY_CUSTOMIZABLE_RATES = 'customizable_rates';
     const CATEGORY_SHIPPING_LABELS = 'shipping_labels';
     const GROUP_UPS = 'ups';
+    private const SHIPPING_ANALYTICS_TIMED_UPDATE = 'shipping_analytics_pro_early_access';
+    private const SHIPPING_ANALYTICS_VISIBILITY_START_DATE = '2026-05-17';
+    private const SHIPPING_ANALYTICS_VISIBILITY_END_DATE = '2026-09-30';
     /**
      * @return Plugin[]
      */
@@ -20,6 +25,8 @@ class PluginFactory
         $plugin = new Plugin(__('Flexible Shipping PRO', 'woo-cart-weight'), __('The best and the most powerful Table Rate shipping plugin for WooCommerce. Define the shipping rules based on numerous conditions and configure even the most complex shipping scenarios with ease.', 'woo-cart-weight'), 'flexible-shipping-pro.svg', 'flexible-shipping-pro/flexible-shipping-pro.php', $categories[self::CATEGORY_CUSTOMIZABLE_RATES], ' https://octol.io/fs-extensions');
         $plugin->add_url('https://octol.io/fs-extensions-pl', 'pl_PL');
         $plugins[] = $plugin;
+        $shipping_analytics_visibility_period = self::get_shipping_analytics_visibility_period();
+        $plugins[] = new Plugin(__('Shipping Analytics PRO', 'woo-cart-weight'), __('Get actionable recommendations based on real checkout issues, missing rates, abandoned carts, and shipping configuration gaps. Be the first to try it out!', 'woo-cart-weight'), 'flexible-shipping-pro.svg', 'shipping-analytics-pro', $categories[self::CATEGORY_CUSTOMIZABLE_RATES], 'https://shipping-optimization.octolize.com/#form', null, __('Get early access →', 'woo-cart-weight'), 'btn-yellow', $shipping_analytics_visibility_period, new TimedUpdate(self::SHIPPING_ANALYTICS_TIMED_UPDATE, $shipping_analytics_visibility_period));
         $plugin = new Plugin(__('All Plugins Bundle', 'woo-cart-weight'), __('Grab a pack of all Octolize plugins as a cut-price tailor-made limited offer for developers, agencies and freelancers. Move the WooCommerce shipping to a whole new level. No strings attached, each plugin\'s 25‑sites subscription included.', 'woo-cart-weight'), 'all-plugins-bundle-avatar-icon.svg', 'all-plugins-bundle', $categories[self::CATEGORY_BUNDLES], 'https://octol.io/all-plugins-bundle-extensions');
         $plugin->add_url('https://octol.io/all-plugins-bundle-extensions-pl', 'pl_PL');
         $plugins[] = $plugin;
@@ -38,7 +45,7 @@ class PluginFactory
         $plugin = new Plugin(__('UPS Live Rates and Access Points PRO', 'woo-cart-weight'), __('WooCommerce UPS integration packed with many advanced features. Display the dynamically calculated live rates for UPS shipping methods and adjust them to your needs.', 'woo-cart-weight'), 'flexible-shipping-ups-pro.svg', 'flexible-shipping-ups-pro/flexible-shipping-ups-pro.php', $categories[self::CATEGORY_LIVE_RATES], 'https://octol.io/ups-extensions', self::GROUP_UPS);
         $plugin->add_url('https://octol.io/ups-extensions-pl', 'pl_PL');
         $plugins[] = $plugin;
-        $plugin = new Plugin(__('FedEx WooCommerce Live Rates PRO', 'woo-cart-weight'), __('Enable the FedEx live rates for international delivery and integrate it with your shop in less than 5 minutes. Save your time and money – let the shipping cost be calculated automatically.', 'woo-cart-weight'), 'flexible-shipping-fedex-pro.svg', 'flexible-shipping-fedex-pro/flexible-shipping-fedex-pro.php', $categories[self::CATEGORY_LIVE_RATES], 'https://octol.io/fedex-extensions', self::GROUP_UPS);
+        $plugin = new Plugin(__('FedEx WooCommerce Live Rates PRO<br>(with LTL Freight)', 'woo-cart-weight'), __('Enable the FedEx live rates for international delivery and integrate it with your shop in less than 5 minutes. Save your time and money – let the shipping cost be calculated automatically. Now with LTL Freight support!', 'woo-cart-weight'), 'flexible-shipping-fedex-pro.svg', 'flexible-shipping-fedex-pro/flexible-shipping-fedex-pro.php', $categories[self::CATEGORY_LIVE_RATES], 'https://octol.io/fedex-extensions', self::GROUP_UPS);
         $plugin->add_url('https://octol.io/fedex-extensions-pl', 'pl_PL');
         $plugins[] = $plugin;
         $plugin = new Plugin(__('USPS Live Rates PRO', 'woo-cart-weight'), __('Serve your customers the automatically and real-time calculated USPS shipping rates. Add the handling fees, insurance and adjust them to your needs with just a few clicks.', 'woo-cart-weight'), 'flexible-shipping-usps-pro.svg', 'flexible-shipping-usps-pro/flexible-shipping-usps-pro.php', $categories[self::CATEGORY_LIVE_RATES], 'https://octol.io/usps-extensions', self::GROUP_UPS);
@@ -105,6 +112,10 @@ class PluginFactory
         foreach ($plugins as $key => $plugin) {
             if (in_array($plugin->get_plugin_file(), $active_plugins, \true)) {
                 unset($plugins[$key]);
+                continue;
+            }
+            if (!$plugin->is_visible()) {
+                unset($plugins[$key]);
             }
         }
         return $plugins;
@@ -115,5 +126,16 @@ class PluginFactory
     public static function get_categories(): array
     {
         return [self::CATEGORY_ALL => __('All', 'woo-cart-weight'), self::CATEGORY_BUNDLES => __('Bundles', 'woo-cart-weight'), self::CATEGORY_LIVE_RATES => __('Live Rates', 'woo-cart-weight'), self::CATEGORY_CUSTOMIZABLE_RATES => __('Customizable Rates', 'woo-cart-weight'), self::CATEGORY_SHIPPING_LABELS => __('Shipping Labels', 'woo-cart-weight')];
+    }
+    /**
+     * @return TimedUpdate[]
+     */
+    public static function get_timed_updates(): array
+    {
+        return [new TimedUpdate(self::SHIPPING_ANALYTICS_TIMED_UPDATE, self::get_shipping_analytics_visibility_period())];
+    }
+    private static function get_shipping_analytics_visibility_period(): DateRange
+    {
+        return new DateRange(self::SHIPPING_ANALYTICS_VISIBILITY_START_DATE, self::SHIPPING_ANALYTICS_VISIBILITY_END_DATE);
     }
 }

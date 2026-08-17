@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitf40fcb643f78078df9e386656b2922f3
+class ComposerStaticInit48e06da77226bf1abc8e4f238b8815c9
 {
     public static $prefixLengthsPsr4 = array (
         'W' =>
@@ -143,14 +143,17 @@ class ComposerStaticInitf40fcb643f78078df9e386656b2922f3
         'WCWeightVendor\\Octolize\\Blocks\\StoreEndpoint' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/octolize-checkout-block-integration/src/Blocks/StoreEndpoint.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\AdminPage' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/AdminPage.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Assets' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Assets.php',
-        'WCWeightVendor\\Octolize\\ShippingExtensions\\BlackFriday2025Promo' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/BlackFriday2025Promo.php',
+        'WCWeightVendor\\Octolize\\ShippingExtensions\\DateRange' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/DateRange.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Page' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Page.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\PageViewTracker' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/PageViewTracker.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\PluginLinks' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/PluginLinks.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Plugin\\Plugin' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/Plugin.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Plugin\\PluginFactory' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginFactory.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Plugin\\PluginSorter' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Plugin/PluginSorter.php',
+        'WCWeightVendor\\Octolize\\ShippingExtensions\\Promo\\Summer2026Promo' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Promo/Summer2026Promo.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\ShippingExtensions' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/ShippingExtensions.php',
+        'WCWeightVendor\\Octolize\\ShippingExtensions\\TimedUpdate' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/TimedUpdate.php',
+        'WCWeightVendor\\Octolize\\ShippingExtensions\\TimedUpdates' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/TimedUpdates.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Tracker\\DataProvider\\ShippingExtensionsDataProvider' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Tracker/DataProvider/ShippingExtensionsDataProvider.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Tracker\\Tracker' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Tracker/Tracker.php',
         'WCWeightVendor\\Octolize\\ShippingExtensions\\Tracker\\ViewPageTracker' => __DIR__ . '/../..' . '/vendor_prefixed/octolize/wp-shipping-extensions/src/ShippingExtensions/Tracker/ViewPageTracker.php',
@@ -251,7 +254,7 @@ class ComposerStaticInitf40fcb643f78078df9e386656b2922f3
         'WCWeightVendor\\WPDesk\\Plugin\\Flow\\Initialization\\Simple\\SimplePaidStrategy' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-plugin-flow-common/src/Initialization/Simple/SimplePaidStrategy.php',
         'WCWeightVendor\\WPDesk\\Plugin\\Flow\\Initialization\\Simple\\TrackerInstanceAsFilterTrait' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-plugin-flow-common/src/Initialization/TrackerInstanceAsFilterTrait.php',
         'WCWeightVendor\\WPDesk\\Plugin\\Flow\\PluginBootstrap' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-plugin-flow-common/src/PluginBootstrap.php',
-        'WCWeightVendor\\WPDesk\\Tracker\\Assets' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/Assets.php',
+        'WCWeightVendor\\WPDesk\\Tracker\\Assets' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/Assets.php',
         'WCWeightVendor\\WPDesk\\Tracker\\Deactivation\\AjaxDeactivationDataHandler' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/AjaxDeactivationDataHandler.php',
         'WCWeightVendor\\WPDesk\\Tracker\\Deactivation\\DeactivationContent' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/DeactivationContent.php',
         'WCWeightVendor\\WPDesk\\Tracker\\Deactivation\\DefaultReasonsFactory' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/DefaultReasonsFactory.php',
@@ -262,11 +265,12 @@ class ComposerStaticInitf40fcb643f78078df9e386656b2922f3
         'WCWeightVendor\\WPDesk\\Tracker\\Deactivation\\Thickbox' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/Thickbox.php',
         'WCWeightVendor\\WPDesk\\Tracker\\Deactivation\\Tracker' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/Tracker.php',
         'WCWeightVendor\\WPDesk\\Tracker\\Deactivation\\TrackerFactory' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker-deactivation/src/WPDesk/Tracker/Deactivation/TrackerFactory.php',
-        'WCWeightVendor\\WPDesk\\Tracker\\OptInOptOut' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/OptInOptOut.php',
-        'WCWeightVendor\\WPDesk\\Tracker\\OptInPage' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/OptInPage.php',
-        'WCWeightVendor\\WPDesk\\Tracker\\OptOut' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/OptOut.php',
-        'WCWeightVendor\\WPDesk\\Tracker\\PluginActionLinks' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/PluginActionLinks.php',
-        'WCWeightVendor\\WPDesk\\Tracker\\Shop' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/PSR/WPDesk/Tracker/Shop.php',
+        'WCWeightVendor\\WPDesk\\Tracker\\OptInOptOut' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/OptInOptOut.php',
+        'WCWeightVendor\\WPDesk\\Tracker\\OptInPage' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/OptInPage.php',
+        'WCWeightVendor\\WPDesk\\Tracker\\OptOut' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/OptOut.php',
+        'WCWeightVendor\\WPDesk\\Tracker\\PluginActionLinks' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/PluginActionLinks.php',
+        'WCWeightVendor\\WPDesk\\Tracker\\Shop' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/Shop.php',
+        'WCWeightVendor\\WPDesk\\Tracker\\Tracker' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/Tracker/Tracker.php',
         'WCWeightVendor\\WPDesk\\View\\PluginViewBuilder' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-view/src/PluginViewBuilder.php',
         'WCWeightVendor\\WPDesk\\View\\Renderer\\LoadTemplatePlugin' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-view/src/Renderer/LoadTemplatePlugin.php',
         'WCWeightVendor\\WPDesk\\View\\Renderer\\Renderer' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-view/src/Renderer/Renderer.php',
@@ -317,6 +321,7 @@ class ComposerStaticInitf40fcb643f78078df9e386656b2922f3
         'WCWeightVendor\\WPDesk_Tracker_Sender' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/sender/class-wpdesk-tracker-sender.php',
         'WCWeightVendor\\WPDesk_Tracker_Sender_Exception_WpError' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/sender/Exception/class-wpdesk-tracker-sender-exception-wperror.php',
         'WCWeightVendor\\WPDesk_Tracker_Sender_Logged' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/sender/class-wpdesk-tracker-sender-logged.php',
+        'WCWeightVendor\\WPDesk_Tracker_Sender_Resolver' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/sender/class-wpdesk-tracker-sender-resolver.php',
         'WCWeightVendor\\WPDesk_Tracker_Sender_Wordpress_To_WPDesk' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/sender/class-wpdesk-tracker-sender-wordpress-to-wpdesk.php',
         'WCWeightVendor\\WPDesk_Translable' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-builder/src/Plugin/WithoutNamespace/Translable.php',
         'WCWeightVendor\\WPDesk_Translatable' => __DIR__ . '/../..' . '/vendor_prefixed/wpdesk/wp-builder/src/Plugin/WithoutNamespace/Translatable.php',
@@ -336,9 +341,9 @@ class ComposerStaticInitf40fcb643f78078df9e386656b2922f3
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitf40fcb643f78078df9e386656b2922f3::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitf40fcb643f78078df9e386656b2922f3::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitf40fcb643f78078df9e386656b2922f3::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit48e06da77226bf1abc8e4f238b8815c9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit48e06da77226bf1abc8e4f238b8815c9::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit48e06da77226bf1abc8e4f238b8815c9::$classMap;
 
         }, null, ClassLoader::class);
     }
